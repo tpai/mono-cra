@@ -8,6 +8,7 @@
     "build": "rm -rf dist/ && webpack --config webpack.config.prod.js"
   },
   "devDependencies": {
+    "@babel/core": "^7.3.3",
     "@babel/plugin-proposal-class-properties": "^7.3.3",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.3.1",
@@ -20,6 +21,11 @@
     "react-styleguidist": "^9.0.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
   }
 }
