@@ -1,0 +1,15 @@
+{
+  "name": "mono-cra",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "lerna bootstrap",
+    "clean": "lerna clean"
+  },
+  "devDependencies": {
+    "lerna": "^3.13.0",
+    "node-sass": "^4.11.0"
+  }
+}
