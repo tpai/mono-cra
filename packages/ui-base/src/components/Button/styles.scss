@@ -1,6 +1,10 @@
 .button {
   border: 0;
-  border-radius: 15px;
-  background: #eee;
+  border-radius: 5px;
+  cursor: pointer;
   outline: none;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 10px 30px;
+  min-height: 48px;
 }

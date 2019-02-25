@@ -1,12 +1,19 @@
 import React, { PureComponent } from 'react';
 import * as UI from 'ui-base';
 
+import styles from './App.module.scss';
+
 class App extends PureComponent {
   render() {
     return (
-      <div>
-        <UI.Button handleClick={() => alert('imported button clicked')}>
-          Click Me in App
+      <div className={styles.container}>
+        <div className={styles.logo} />
+        <UI.Button
+          className={styles.button}
+          handleClick={() => alert('Got you!')}
+        >
+          <i class="far fa-hand-point-up"></i>
+          Click Me!
         </UI.Button>
       </div>
     );
