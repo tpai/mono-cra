@@ -1,3 +1,8 @@
-const { RewiredConfig } = require('common-settings');
+const path = require('path');
 
-module.exports = RewiredConfig;
+module.exports = function configOverrides(config, env) {
+  config.resolve.alias = Object.assign({}, config.resolve.alias, {
+    'assets': path.resolve(__dirname, './src/assets'),
+  });
+  return config;
+};
