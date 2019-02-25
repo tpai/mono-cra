@@ -22,7 +22,7 @@ Install required dependencies and create symlink between repos.
 `/`
 
 ```
-yarn start
+yarn global add lerna && yarn start
 ```
 
 ### Launch Styleguidist Server
