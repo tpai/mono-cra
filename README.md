@@ -1,19 +1,17 @@
 # Mono CRA
 
-Managing UI components, common settings and application projects with Lerna.
+Managing UI components and application projects with Lerna.
 
 ## File Structure
 
 ```
 packages/
   app/
-  common-settings/
   ui-base/
 ```
 
 * `app/` - application project built with [CRA](https://github.com/facebook/create-react-app), you can use this package as starter project.
-* `common-settings/` - unite the configuration.
-* `ui-base/` - style guide serve by [styleguidist](https://github.com/styleguidist/react-styleguidist), also you can build standalone version for other repo.
+* `ui-base/` - style guide serve by [styleguidist](https://github.com/styleguidist/react-styleguidist), also you can build standalone version library.
 
 ## Usage
 
