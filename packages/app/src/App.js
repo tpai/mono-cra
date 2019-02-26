@@ -12,7 +12,7 @@ class App extends PureComponent {
           className={styles.button}
           handleClick={() => alert('Got you!')}
         >
-          <i class="far fa-hand-point-up"></i>
+          <i className="far fa-hand-point-up"></i>
           Click Me!
         </UI.Button>
       </div>
