@@ -1,9 +1,6 @@
 {
   "name": "mono-cra",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
     "start": "lerna bootstrap",
     "clean": "lerna clean -y"
