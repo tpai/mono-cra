@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "start": "lerna bootstrap",
-    "clean": "lerna clean"
+    "clean": "lerna clean -y"
   },
   "devDependencies": {
     "lerna": "^3.13.0",
