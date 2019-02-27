@@ -1,11 +1,29 @@
 const path = require('path');
 
 module.exports = {
+  mode: process.env.NODE_ENV,
+  entry: './index.js',
+  output: {
+    filename: 'ui-base.js',
+    library: {
+      root: 'uiBase',
+      commonjs: 'ui-base',
+      amd: 'ui-base',
+    },
+    libraryTarget: 'umd',
+  },
+  externals: {
+    react: {
+      root: 'React',
+      commonjs2: 'react',
+      amd: 'react',
+      commonjs: 'react',
+    },
+  },
   resolve: {
     modules: ['src', 'node_modules'],
     extensions: ['.js', '.jsx', '.json', 'scss', 'css'],
   },
-  entry: './index.js',
   module: {
     rules: [
       {
