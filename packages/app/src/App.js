@@ -1,20 +1,40 @@
 import React, { PureComponent } from 'react';
-import * as UI from 'ui-base';
+import cx from 'classnames';
+import { Button } from 'ui-base';
 
 import styles from './App.module.scss';
 
 class App extends PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isPaused: false,
+    };
+  }
+  handleToggleRotation = () => {
+    this.setState(({ isPaused }) =>
+      ({ isPaused: !isPaused })
+    );
+  }
   render() {
+    const { isPaused } = this.state;
     return (
       <div className={styles.container}>
-        <div className={styles.logo} />
-        <UI.Button
-          className={styles.button}
-          handleClick={() => alert('Got you!')}
+        <div
+          className={cx(styles.logo, {
+            [styles.running]: !isPaused,
+            [styles.pause]: isPaused,
+          })}
+        />
+        <Button
+          className={cx(styles.button, {
+            [styles.pause]: !isPaused,
+          })}
+          handleClick={this.handleToggleRotation}
         >
-          <i className="far fa-hand-point-up"></i>
-          Click Me!
-        </UI.Button>
+          <i className={cx('fas', isPaused ? 'fa-play' : 'fa-pause')}></i>
+          {isPaused ? 'Start' : 'Stop'}
+        </Button>
       </div>
     );
   }
