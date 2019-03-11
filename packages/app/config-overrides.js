@@ -1,9 +1,11 @@
 const path = require('path');
+const resolvedPaths = require('./resolved-paths');
 
 module.exports = {
   webpack: (config, env) => {
-    config.resolve.alias = Object.assign({}, config.resolve.alias, {
-      'assets': path.resolve(__dirname, './src/assets'),
+    config.resolve.alias = Object.assign({}, config.resolve.alias, resolvedPaths);
+    return config;
+  },
   jest: (config) => {
     config.moduleDirectories = [
       'node_modules',
