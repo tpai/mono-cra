@@ -30,5 +30,8 @@
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-sort-class-members": "^1.4.0",
     "react-app-rewired": "^2.1.0"
+  },
+  "jest": {
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
   }
 }
