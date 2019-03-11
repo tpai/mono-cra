@@ -23,6 +23,9 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
+    "enzyme-to-json": "^3.3.5",
     "eslint-plugin-jest": "^22.3.0",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-sort-class-members": "^1.4.0",
