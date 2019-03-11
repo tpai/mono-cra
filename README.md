@@ -33,17 +33,27 @@ yarn start
 
 Visit `http://localhost:6060`
 
-### Build Standalone Library
+### Build Standalone Library (watch mode)
 
 `packages/ui-base/`
 
 ```
-yarn build
+yarn dev
 ```
 
-Check out `packages/ui-base/dist/ui-base.js`
+It will regenerate  `packages/ui-base/dist/ui-base.js` every time you make a change.
 
 ### Launch Dev Server
+
+Assume your API server is launching on port 3333, you have to change proxy setting.
+
+`packages/builder/package.json`
+
+```
+"proxy": "http://localhost:3333"
+```
+
+Now you can launch developmet server.
 
 `packages/app/`
 
