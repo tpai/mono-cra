@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import cx from 'classnames';
 import { Button } from 'ui-base';
 
-import styles from './App.module.scss';
+import styles from './styles.module.scss';
 
 class App extends PureComponent {
   constructor(props) {
