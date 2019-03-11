@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/App should render correct component when rotation is paused 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="logo pause"
+  />
+  <Button
+    className="button"
+    handleClick={[Function]}
+  >
+    <i
+      className="fas fa-play"
+    />
+    Start
+  </Button>
+</div>
+`;
+
+exports[`components/App should render initial component 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="logo running"
+  />
+  <Button
+    className="button pause"
+    handleClick={[Function]}
+  >
+    <i
+      className="fas fa-pause"
+    />
+    Stop
+  </Button>
+</div>
+`;
